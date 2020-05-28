@@ -17,11 +17,14 @@ router.post('/loveApi', async (req, res) => {
             'x-rapidapi-key': process.env.API_KEY,
             useQueryString: true
         }
+    } 
+    try{
+        let response = await fetch( url, options );
+        let json = await response.json();
+        res.json( json ); 
+    } catch (error) {
+        console.error(error);
     }
-
-    let response = await fetch( url, options );
-    let json = await response.json();
-    res.json( json );
 });
 
 
