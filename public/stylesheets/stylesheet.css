@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Benedict';
+    src: url('/fonts/Benedict.eot');
+    src: url('/fonts/Benedict.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Benedict.woff2') format('woff2'),
+        url('/fonts/Benedict.woff') format('woff'),
+        url('/fonts/Benedict.ttf') format('truetype'),
+        url('/fonts/Benedict.svg#Benedict') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+

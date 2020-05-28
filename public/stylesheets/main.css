@@ -1,5 +1,6 @@
 @import 'shared/variables.css';
 @import 'loading-bar.css';
+@import 'stylesheet.css';
 
 :root{
     font-size: 27px;
@@ -17,11 +18,14 @@ body{
 }
 
 h1{
-    margin-top: 0;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: Benedict;
 }
 
 h1 span{
     color: var(--color-title-hex);
+    font-size: 80px;
 }
 
 .container{
@@ -86,6 +90,7 @@ h1 span{
     margin-bottom: 5%;
     margin-top: 2%;
     font-size: 18px;
+    outline: none;
 }
 
 .third{
