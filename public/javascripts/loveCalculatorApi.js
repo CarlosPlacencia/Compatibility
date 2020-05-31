@@ -11,9 +11,10 @@
 } );
 
 async function serverCall () {
-    let fName = document.getElementById( 'Fname' ).value;
-    let sName = document.getElementById( 'Sname' ).value;
-    let message = document.querySelector( '.message');
+    let fName = document.querySelector( '.fName' ).value;
+    let sName = document.querySelector( '.sName' ).value;
+    let message = document.querySelectorAll( '.message');
+
 
     let names = {
         fname: fName,
@@ -33,7 +34,8 @@ async function serverCall () {
   
     let percentage = Number(data.percentage);
 
-    message.textContent = data.result;
+    message[0].textContent = data.result;
+    message[1].textContent = data.result;
     heart.set(percentage);
 
 }
