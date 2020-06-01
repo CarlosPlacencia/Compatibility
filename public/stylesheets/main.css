@@ -22,6 +22,11 @@ h1{
     margin-top: 15px;
     margin-left: 20px;
     font-family: Benedict;
+
+    animation: title-load 500ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateY(-30px);
+    opacity: 0;
 }
 
 h1 span{
@@ -44,6 +49,13 @@ h1 span{
 .sectionOne{
     margin-top: 10%;
     text-align: center;
+}
+
+.sectionOne p{
+    animation: title-load 550ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateY(-30px);
+    opacity: 0;
 }
 
 .sectionTwo{
@@ -111,6 +123,11 @@ h1 span{
     outline: none;
 }
 
+
+.submit:hover{
+        background-color: #F74471;
+}
+
 #desktopMessage{
     display: none;
 }
@@ -166,8 +183,18 @@ h1 span{
 
     #desktopMessage{
         display: inline;
-        margin-top: 3%;
+
     }
+}
 
 
+@keyframes title-load {
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
