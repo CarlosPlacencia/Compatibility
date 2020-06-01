@@ -34,9 +34,35 @@ async function serverCall () {
   
     let percentage = Number(data.percentage);
 
-    message[0].textContent = data.result;
-    message[1].textContent = data.result;
+    // message[0].textContent = data.result;
+    // message[1].textContent = data.result;
+    messageAnimation(message, data);
     heart.set(percentage);
-
 }
 
+
+function messageAnimation(message, data) {
+    function fadeOut(){
+        message[1].style.opacity = 0;
+        message[1].style.transform = 'translateX(-20px)';
+        message[0].style.opacity = 0;
+        message[0].style.transform = 'translateX(-20px)';
+    }
+
+    function fadeIn(){
+        message[1].style.opacity = 1;
+        message[1].style.transform = 'translateX(0)';
+        message[0].style.opacity = 1;
+        message[0].style.transform = 'translateX(0)';
+    }
+
+    function changeTextContent(){
+        message[1].textContent = data.result;
+        message[0].textContent = data.result;
+    }
+
+    fadeOut();
+    setTimeout(changeTextContent, 500);
+    setTimeout(fadeIn, 500);
+
+}

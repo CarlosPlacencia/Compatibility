@@ -80,6 +80,7 @@ h1 span{
 
 .message{
     margin-top: 15px;
+    transition: 0.5s all ease-in-out;
 }
 
 .sectionTwo input{
@@ -132,7 +133,6 @@ h1 span{
     display: none;
 }
 
-
 @media (min-width: 680px ){
     .message{
         display: none;
@@ -182,8 +182,7 @@ h1 span{
     }
 
     #desktopMessage{
-        display: inline;
-
+        display: flex;
     }
 }
 
