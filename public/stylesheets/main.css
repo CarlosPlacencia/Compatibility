@@ -19,15 +19,15 @@ body{
 }
 
 h1{
-    margin: auto;
     font-family: Benedict;
 
-    width: 50%;
-
+    width: 80%;
+    margin: auto;
     animation: title-load 500ms ease-in;
     animation-fill-mode: forwards;
     transform: translateY(-30px);
     opacity: 0;
+    text-align: center;
 }
 
 h1 span{
