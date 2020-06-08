@@ -19,9 +19,10 @@ body{
 }
 
 h1{
-    margin-top: 15px;
-    margin-left: 20px;
+    margin: auto;
     font-family: Benedict;
+
+    width: 265px;
 
     animation: title-load 500ms ease-in;
     animation-fill-mode: forwards;
@@ -134,6 +135,10 @@ h1 span{
 }
 
 @media (min-width: 680px ){
+    h1{
+        margin-top: 15px;
+        margin-left: 20px;
+    }
     .message{
         display: none;
     }
