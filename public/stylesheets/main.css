@@ -22,7 +22,7 @@ h1{
     margin: auto;
     font-family: Benedict;
 
-    width: 265px;
+    width: 50%;
 
     animation: title-load 500ms ease-in;
     animation-fill-mode: forwards;
