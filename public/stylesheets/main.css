@@ -138,6 +138,7 @@ h1 span{
     h1{
         margin-top: 15px;
         margin-left: 20px;
+        text-align: left;
     }
     .message{
         display: none;
